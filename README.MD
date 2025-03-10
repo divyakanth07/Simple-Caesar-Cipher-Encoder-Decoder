@@ -1,45 +1,37 @@
-# Caesar Cipher Encoder
+# Caesar Cipher Encoder & Decoder
 
-This project provides a basic implementation of a Caesar Cipher Encoder. The Caesar Cipher is a substitution cipher where each letter in the plaintext is shifted by a certain number of positions down or up the alphabet. In this version, the code allows you to encode a string of text by shifting each character by a specified number.
+This project provides a simple implementation of the **Caesar Cipher**, a substitution cipher where each letter in the plaintext is shifted by a specific number of positions down or up the alphabet. The project includes both the encoder and decoder functionality to easily encrypt and decrypt messages.
 
 ## How It Works
 
-The `encrypt()` function accepts two inputs:
+The Caesar Cipher works by shifting the characters of the input text by a specified number, called the **shift number**. It treats both uppercase and lowercase letters differently, leaving non-alphabet characters (such as spaces and punctuation) unchanged.
 
-1. `text` (string): The text you want to encode.
-2. `s` (int): The number of positions to shift each letter in the text.
+- **Encoder**: Shifts each letter by a specified number of positions to generate the encoded message.
+- **Decoder**: Reverses the shift and returns the original message.
 
-For each character in the input `text`, the function checks if the character is uppercase or lowercase and applies the appropriate shift. The result is a string where each letter is shifted by `s` positions.
+## Example Usage
 
-### Example Input
+### Encoder Interaction
 
-he died
+When you run the encoder, you will be prompted to enter the text you want to encode and the number of positions (shift) to apply. For example:
 
+#### Sample Interaction:
 
-### Example Output
-``` bash
-What happened to ceaser? he died
-What number is under that rock ???3
-CEASERRRRRRRRRRRRRRRRRRRR :he died
-CEASERRRRRRRRRRRRRRRRRRRRrrrrrrrrrrrrr:3
-ccccCCeaserrrrrrrrrrrrrrrRRRRRRRRRRRRRRRRRRRRRRRRRRR: khqglhg
+![Encoder](encode.jpeg)
 
-```
+### Decoder Interaction
 
+When you run the decoder, you will input the encoded message and the same shift number used during encoding. The program will then decrypt the message and return the original text.
 
-> The `encrypt()` function shifts each letter by the value `3` in this example (which is the number chosen in the prompt). This function will be used for encoding the text.
+#### Sample Interaction:
 
-## Usage
-
-1. Run the code.
-2. You will be prompted to enter the text you want to encode.
-3. You will also be prompted to enter the number of positions you'd like to shift each character.
-4. The output will display the original text and the encoded string.
-
-### Inputs:
-- **Text**: The sentence or phrase to be encoded.
-- **Shift Number**: The number of positions to shift each character in the text.
+![Decoder](decode.jpeg)
 
 ## Future Enhancements
 
-- A decoder function will be added soon to reverse the encryption and decode the message.
+- Additional features like handling different shift patterns or integrating more cipher types may be added in the future.
+- Making this into a complex tool that can handle spaces. punctuation and special characters
+---
+
+**Note:** This cipher works best for alphabetic characters. Spaces, punctuation, and special characters are unaffected by the encoding or decoding process.
+
