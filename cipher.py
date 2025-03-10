@@ -4,11 +4,13 @@ def encrypt(text, s):
 	for i in range(len(text)):
 		char =text[i]
 
-		if (char.isupper()):
+		if char.isupper():
 			result += chr((ord(char) + s - 97) % 26 + 65)
 
-		else:
+		elif char.islower():
 			result += chr((ord(char)+ s - 97)% 26 + 97)
+		else:
+			result += char
 
 	return result
 
