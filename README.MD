@@ -11,11 +11,6 @@ The `encrypt()` function accepts two inputs:
 
 For each character in the input `text`, the function checks if the character is uppercase or lowercase and applies the appropriate shift. The result is a string where each letter is shifted by `s` positions.
 
-### Example Input
-
-he died
-
-
 ### Example Output
 ``` bash
 What happened to ceaser? he died
