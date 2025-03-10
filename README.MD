@@ -17,7 +17,7 @@ When you run the encoder, you will be prompted to enter the text you want to enc
 
 #### Sample Interaction:
 
-![Encoder](encode.jpeg)
+![Encoder](Encoder.png)
 
 ### Decoder Interaction
 
@@ -25,7 +25,7 @@ When you run the decoder, you will input the encoded message and the same shift 
 
 #### Sample Interaction:
 
-![Decoder](decode.jpeg)
+![Decoder](Decoder.png)
 
 ## Future Enhancements
 
